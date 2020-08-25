@@ -8,15 +8,13 @@
 </head>
 <body>
     <header>
-        <h1>
-            HangMan
-        </h1>
-        <p>
-            find the hidden word - enter a letter
-        </p>
+        <h1>HangMan</h1>
+
+        <p>Find the hidden word, begin by entering a letter.</p>
     </header>
 
     <main> 
+        
         
         <div class="game-container">
             <svg class="figure-container" height='250' width='200'>
@@ -37,11 +35,33 @@
                 <line x1="140" y1="150" x2="160" y2="190" class="figure-part"/>
                 <line x1="140" y1="150" x2="120" y2="190" class="figure-part"/>
             </svg>
+            <div class="wrong-letters-container">
+                <div id="wrong-letters">
+                
+            </div>
+            </div>
+            
         </div>
+            <div id="word" class="word">
+                
+            </div>
 
-
+        <!-- container for final message -->
+        <div class="container">
+            <div class="popup-container popup" id="popup-container">
+                <h2 id="final-message">You have Won</h2>
+                <button id="play-again">Play again</button>
+            </div>
+        
+            <!-- notification -->
+            <div class="notification-container" id="notification-container">
+                <p>You have already selected that letter.</p>
+            </div>
+        </div>
+       
     </main>
 
-    <script src="scripts.js"></script>
+
+    <script type ="text/javascript" src="scripts.js"></script>
 </body>
 </html>
